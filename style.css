@@ -1,0 +1,461 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+
+@import "partials/colors.css";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER --------------- */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    margin-left: 8.5rem;
+    color: var(--cor-preto);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'DM Serif Display', sans-serif;
+    font-size: 1.5rem;
+    line-height: 50px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.navegador {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-right: 9rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+
+}
+
+.navegador img:hover {
+    transform: scale(1.2);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+ul li:hover {
+    color: var(--dourado);
+}
+
+/*  FIM HEADER --------------- */
+
+/* MAIN -----------------------*/
+
+
+.pt-1 {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 10rem;
+   
+}
+
+.parte-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 25rem;
+}
+
+.parte-1 img {
+    max-width: 75.6rem;
+    z-index: -1;
+}
+
+.parte-1 p {
+    color: var(--cor-branco);
+    padding-left: 1rem;
+    font-family: 'Inter' , sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+h1 {
+    font-family: 'DM Serif Display', sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    color: var(--cor-branco);
+    margin-top: -40rem;
+    padding-left: 1rem;
+}
+
+button {
+    background: var(--dourado);
+    color: var(--cor-branco);
+    font-size: 1rem;
+    font-family: 'Inter' , sans-serif;
+    border: none;
+    border-radius: 10px;
+    padding: 22px 49px;
+    cursor: pointer;
+    margin: 1.5rem 1rem;
+    transition: transform 0.30s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.parte-1-2 {
+    margin: 0rem 1rem 0rem 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.parte-1-2 span {
+    font-family: 'DM Serif Display', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    color: var(--cor-preto);
+}
+
+
+.parte-1-2 p {
+    color: var(--cor-texto);
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: 0px 10px;
+    transition: transform 1s;
+}
+
+.texto-seta:hover {
+    transform: scale(1.2);
+}
+
+
+.pt-2 {
+    margin: 5rem 10rem;
+}
+
+.parte-2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15rem;
+}
+
+.parte-2 img {
+    max-width: 75.6rem;
+    z-index: -1;
+    
+}
+
+.parte-2 h2 {
+    margin-top: -30rem;
+    z-index: 99 ;
+    font-family: 'DM Serif Display', sans-serif;
+    font-size: 3.4rem;
+    font-weight: 400;
+    color: var(--cor-branco);
+    padding-left:  1rem;
+}
+
+.parte-2 p {
+    color: var(--cor-branco);
+    color: var(--cor-branco);
+    padding-left: 1rem;
+    font-family: 'Jost' , sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+
+.telefone-icone {
+    padding: 1.5rem 1rem;
+    display: flex;
+    max-width: 3rem;
+    text-decoration: none;
+
+
+}
+
+.telefone-icone .tooltip-text {
+    visibility: hidden;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: var(--dourado);
+    color: var(--cor-texto);
+    opacity: 0;
+    transition: opacity 0.4s;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+
+}
+
+ .telefone-icone:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.parte-2-1 {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 10rem;
+    border-radius: 3rem;
+    background-color: var(--dourado);
+    max-width: 900px;
+
+}
+
+.parte-2-1 h2 {
+    font-family: 'DM Serif Display', sans-serif;
+    color: var(--cor-branco);
+    font-size: 3.5rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;  
+    
+}
+
+.foto-retrato {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.foto-retrato img {
+    border-radius: 50px;
+}
+
+.foto-retrato div {
+    background: var(--cor-branco);
+    padding: 2rem 2.5rem;
+    border-radius: 10px;
+    font-family: 'Jost', sans-serif;
+}
+
+.foto-retrato h3 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+}
+
+.foto-retrato p {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.icones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 5rem;
+}
+
+
+
+.texto-pt-3 {
+    padding: 10rem 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'DM Serif Display', sans-serif;
+    font-size: 2rem;
+    color: var(--cor-preto);
+}
+
+.texto-pt-3 p {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.7rem;
+    color: var(--cor-texto);
+}
+
+
+.imagens-de-quartos {
+    margin: 5rem 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.texto-imagem-cama {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'DM Serif Display', sans-serif;
+    font-size: 1.5rem;
+    color: var(--cor-preto);
+    padding: 0.5rem 0 2.2rem 0;
+}
+
+.texto-imagem-cama p {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.3rem;
+    color: var(--cor-texto);
+}
+
+.texto-imagem-cama div {
+    display: flex;
+    flex-direction: column;
+}
+
+.parte-4-texto {
+    font-family: 'DM Serif Display';
+    font-size: 2rem;
+    color: var(--cor-preto);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 7rem;
+
+}
+
+.parte-4-texto p {
+    font-family: 'Jost';
+    font-size: 1.5rem;
+    color: var(--cor-texto);
+}
+
+.imagens-de-cozinhas {
+    margin: 5rem 8rem 2rem 9rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    font-family: 'DM Serif Display', sans-serif;
+    color: var(--cor-preto);
+    cursor: pointer;
+}
+
+.imagens-de-cozinhas img {
+    border-radius: 3rem 3rem 0 0;
+    z-index: -1;
+}
+
+.imagens-de-cozinhas p {
+    margin: -4rem 0 3rem 0;
+    font-family: 'Jost', sans-serif;
+}
+
+.imagens-de-cozinhas div {
+    background: var(--cor-branco);
+}
+
+.imagens-de-cozinhas-icone {
+    max-width: 0px;
+    margin-left: 16rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.imagens-de-cozinhas-icone:hover {
+    transform: scale(1.2);
+}
+
+.imagem-cama {
+    margin-top: 7rem;
+    z-index: -1;
+}
+
+.imagem-cama img {
+    max-width: 94.9rem;
+}
+
+.imagem-cama-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -17rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.5rem;
+    color: var(--cor-preto);   
+}
+
+
+/* FIM DO MAIN --------------- */
+
+/* FOOTER --------------------- */
+
+.pt-5 {
+    margin: 7rem 12rem;
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+}
+
+.parte-5-texto {
+    margin-top: -9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.parte-5-texto h2 {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    font-family: 'DM Serif Display', sans-serif;
+    color: var(--cor-preto);
+    gap: 1rem;
+}
+
+.parte-5-texto p {
+    font-family: 'Jost';
+    color: var(--cor-texto);
+    font-size: 1.3rem;
+}
+
+.listas p {
+    font-family: 'DM Serif Display', sans-serif;
+    font-size: 1.7rem;
+    color: var(--cor-preto);
+    padding-bottom: 1rem;
+}
+
+.listas ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    font-family: 'Jost', sans-serif;
+    color: var(--cor-texto);
+    gap: 1rem;
+
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.3rem;
+    color: var(--cor-texto);
+}
